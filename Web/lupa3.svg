@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30mm" height="30mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 30 30"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#FEFEFE;stroke-width:0.2}
+    .str2 {stroke:#FEFEFE;stroke-width:0.5}
+    .str3 {stroke:#FEFEFE;stroke-width:0.75}
+    .str0 {stroke:#FEFEFE}
+    .fil0 {fill:none}
+    .fil1 {fill:#FEFEFE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_464942744">
+   <path id="_444089776" class="fil0 str0" d="M3.9376 3.9613l22.3576 0c1.2005,0 2.1827,0.9822 2.1827,2.1827l0 18.1242c0,1.2005 -0.9822,2.1827 -2.1827,2.1827l-22.3576 0c-1.2005,0 -2.1827,-0.9822 -2.1827,-2.1827l0 -18.1242c0,-1.2005 0.9822,-2.1827 2.1827,-2.1827zm-2.1827 4.8121l26.723 0"/>
+   <rect id="_463682072" class="fil1 str1" x="8.7164" y="12.4943" width="1.9843" height="1.9843"/>
+   <rect id="_463682672" class="fil1 str1" x="12.3545" y="12.4943" width="1.9843" height="1.9843"/>
+   <rect id="_463681784" class="fil1 str1" x="15.9926" y="12.4943" width="1.9843" height="1.9843"/>
+   <rect id="_463681256" class="fil1 str1" x="19.6307" y="12.4943" width="1.9843" height="1.9843"/>
+   <rect id="_463684472" class="fil1 str1" x="23.2688" y="12.4943" width="1.9843" height="1.9843"/>
+   <rect id="_463685600" class="fil1 str1" x="5.0783" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_463685840" class="fil1 str1" x="8.7164" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_463682408" class="fil1 str1" x="12.3545" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_463684328" class="fil1 str1" x="15.9926" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_463682024" class="fil1 str1" x="19.6307" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_463683920" class="fil1 str1" x="23.2688" y="16.5292" width="1.9843" height="1.9843"/>
+   <rect id="_464936240" class="fil0 str2" x="6.05436" y="22.317" width="13.0969" height="1.9843"/>
+   <g>
+    <line id="_463684736" class="fil0 str2" x1="25.8343" y1="6.4777" x2="26.5156" y2= "7.747" />
+    <circle id="_463682240" class="fil0 str3" transform="matrix(0.262733 -0.141023 0.141023 0.262733 25.4611 5.78258)" r="2.6458"/>
+   </g>
+  </g>
+ </g>
+</svg>

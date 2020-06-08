@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&family=Sriracha&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Sriracha', sans-serif;
+}
+
+p, blockquote {
+	font-size: .9em;
+	line-height: 1.6em;
+}
+
+ul{
+	list-style-type : none;
+	margin: 0;
+	padding: 0;
+}
+
+.contener{
+	text-align: center;
+	padding: .8em 1.2em;
+}
+
+.logo{
+	width: 50px;
+	position: absolute;
+	left: 10px;
+}
+
+.logo1{
+	position: relative;
+	left: 5px;
+	width: 35px;
+}
+
+header{
+display: flex;
+justify-content: space-between;	
+}
+
+.hide-mobile{ 
+	display: none;
+}
+
+.menu {
+	width: 25px;
+	margin-top: 40%;
+}
+
+h1, .subhead{
+	font-size: 2em;
+}
+
+.green-contener{
+	width: 100%;
+	background: #23c465;
+	color: white;
+	margin-top: 10%;
+	padding: 4em 0;
+	border-top-left-radius: 40px;
+	transform: skewY(-2deg);
+}
+
+.green-contener ul{
+	transform: skewY(2deg);
+}
+
+.green-contener ul li{
+	margin-bottom: 3em;
+}
+
+.green-contener ul li p{
+	padding: 0 .5em;
+}
+
+h2{
+	margin-top: 7%;
+}
+
+
+.zsk{
+	background: #2f6ced;
+	width: calc(100% - 1em);
+	display: block;
+	color: white;
+	border-radius:20px;
+	padding: .5em;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 4% auto 7%;
+	position: relative;
+}
+
+.footer-logowanie{
+	background: #d9d9d9;
+	background: #2b2b2b;
+	color: white;
+	padding: 3em 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.footer-contener{
+	background: #d9d9d9;
+	background: #2b2b2b;
+	color: white;
+	padding: 3em 0;
+}
+
+ul.footer-link {
+	margin: 0 auto;
+}
+
+ul.footer-link li{
+	display: inline-block;
+}
+
+ul.footer-link li a{
+	color: #adb4ba;
+}
+
+nav ul {
+	position: fixed;
+	width: 60%;
+	top: 0;
+	right: 0;
+	text-align: left;
+	background: #333333;
+	height: 100%;
+	z-index: 7;
+	padding-top: 3em;
+	opacity: 0.97;
+}
+
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 1em 2em;
+	background-color: #707070;
+}
+
+
+nav ul li a:hover{
+	background-color: #b4b6b8
+}
+
+.exit-menu{
+	margin-bottom: 1em;
+	margin-top: -1.3em;
+	text-align: right;
+	padding: 0 1.4em;
+}
+
+.exit-menu img{
+	width : 15px;
+	cursor: pointer;
+}
+
+.glowna{
+	text-align: center;
+	height: 350px;
+}
+.glowna h1{
+	font-size: 2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.glowna a{
+	color: black;
+	display: block;
+	margin: -5% auto;
+}
+
+
+.contener-table{
+	
+	text-align: center; 
+	 border-collapse: collapse;
+	 margin: 25px 0;
+	 font-size: 0.9em;
+	 min-width: 400px;
+}
+.contener-table thead tr{
+	background-color: rgb(35, 196, 101);
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+}
+
+.contener-table th,
+.contener-table td{
+	padding: 12px 15px; 
+}
+
+.contener-table tbody tr{
+	border-bottom: 1px solid #dddddd;
+}
+
+.contener-table tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;	
+}
+
+.tabela .calosc{
+border-width: 1px;
+border-style: solid;
+border-color: black;
+margin-left: 7%;
+margin-right: 7%;
+font-size: 20px;
+padding-top:  0px;
+}
+
+.tabela .zsk2{
+	background: #23c465;
+	width: calc(100% - 1em);
+	width: 14%;
+	display: block;
+	color: white;
+	border-radius:20px;
+	padding: .5em;
+	text-decoration: none;
+	font-size: 1em;
+	margin: 4% auto 7%;
+	position: relative;
+}
+
+.zaloguj{
+	background: #23c465;
+	width: 220px;
+	display: block;
+	color: white;
+	border: none;
+	border-radius:20px;
+	padding: .5em;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 1% auto 7%;
+	position: relative;
+	
+}
+
+#login{
+	display: block;
+	position:relative; 
+	top: -10px;
+	
+}
+.haslo{
+	display: block;
+	position:relative; 
+	top:2%;
+}
+
+@media only screen and (min-width: 650px){
+	
+	h1{
+		font-size: 3em;
+		padding: 0;
+		
+	}
+	.logo{
+		width: 55px;
+	}
+	.przypis{
+		font-size: 1.4em;
+		margin-bottom: 3%;
+	}
+	
+	.green-contener {
+		margin: 0;		
+	}
+	
+	.green-contener ul{
+		display: flex;
+		margin-top: -1em;
+		align-items: center;
+	}
+	.green-contener ul li{
+		margin-bottom: 0;
+	}
+	.green-contener ul li p{
+		padding: 0 .8em;
+	}
+	.tabela .calosc{
+
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+}
+
+@media only screen and (min-width: 875px){
+
+	.logo{
+		width: 60px;
+	}
+	.przypis{
+		margin-bottom: 3%;
+	}
+	.green-contener ul{
+		margin: 0 0 4% 0;
+	}
+	nav ul li a:hover{
+		background-color: inherit;
+	}
+	.tabela .calosc{
+
+	margin-left: 20%;
+	margin-right: 20%;
+	}
+}
+@media only screen and (min-width: 1329px){
+	.logo{
+		width: 70px;
+	}
+	.zsk{
+		width: 50%;
+	}
+	
+	.zaloguj{
+		width:15%;
+	}
+	
+	.contener{
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.show-desktop{
+		display: block;
+		margin: 0 auto 13% auto;
+	}
+	.hide-desktop{
+		display: none;
+	}
+	nav ul{
+		position: inherit;
+		width: auto;
+		background: none;
+		height: auto;
+		display: flex;
+		padding-top: 0;
+	}
+	
+	nav ul li{
+		float: left;
+	}
+	
+	nav ul li a{
+		color: black;
+		background-color: inherit;
+		text-align: center;
+		padding: 0;
+		margin: 1em 1em;
+		
+	}
+	
+	nav ul li a:hover{
+		background-color: inherit;
+	}
+	
+	.tabela .calosc{
+
+	margin-left: 20%;
+	margin-right: 20%;
+}
+	
+}
+
+@media only screen and (min-width: 1600px){
+	.contener{
+		width: 70%;
+	}
+	
+	.green-contener{
+		padding: 7em 0 2em;
+	}
+	.green-contener ul li p, blockquote{
+		font-size: 1.3em;
+	}
+	
+	h2{
+		margin-top: 4em;
+	}
+	.tabela .calosc{
+
+	margin-left: 30%;
+	margin-right: 30%;
+}
+	
+}

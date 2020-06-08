@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+  <link rel="Stylesheet" type="text/css" href="style.css" />
+
+
+
+  <title>Tankowanie</title>
+
+</head>
+
+
+<body>
+<!-- sessja -->
+<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+$nazwa = $_SESSION['user'];
+$id = $_SESSION['id'];
+$_SESSION['sz'] = "SELECT * FROM Tankowania";
+?>
+<?php
+$data = date('d-m-Y');
+
+?>
+
+
+
+	<div class="contener">
+		<header>
+		<a>
+			<img src="x.svg" alt="System Logowania" class= "logo">
+		</a>
+			<nav>
+				<a href="#" class="hide-desktop">
+					<img src="kreski.svg" alt="menu" class= "menu" id="menu">
+				</a>
+			
+				<ul class="show-desktop hide-mobile" id="nav">
+					<li id="exit" class="exit-menu"><img src="x_1.svg" alt="exit"></li>
+					<li><a href="ceny_paliw.php">Ceny paliw</a></li>
+					<li><a href="stacje.php">Stacje</a></li>
+					<li><a href="raport.php">Tankowania</a></li>	
+					<li><a href="samochodyuzytkownika.php">Samochody</a></li>
+					<li><a href="index.php">Wyloguj</a></li> <!-- improwizorka trzeba zrobic obsluge tego  -->
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<h1>Witaj <?php echo $nazwa;?></h1>		
+				<p class="przypis"> <!-- pobrana nazwa uzytkownika --> </p>
+		</section>
+	</div>
+	<script>
+		var menu = document.getElementById('menu');
+		var nav = document.getElementById('nav');
+		var exit = document.getElementById('exit');
+		
+		menu.addEventListener('click',function(e){
+			nav.classList.toggle('hide-mobile');
+			e.preventDefault();
+		});
+		
+		exit.addEventListener('click',function(e){
+			nav.classList.add('hide-mobile');
+			e.preventDefault();
+		});
+		
+	</script>
+
+
+
+
+
+	<footer>
+		<div class="footer-logowanie" >
+			<div class="contener">
+			<a href="">
+				<img src="x.svg" class="logo1" alt="logo">
+			</a>
+				<p class="address">Gdzies na swiecie, 423<br>PL</p>
+				<ul class="footer-link">
+					<li><a href="#">Tems of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
