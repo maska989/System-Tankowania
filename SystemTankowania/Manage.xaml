@@ -1,0 +1,62 @@
+﻿<Window x:Class="SystemTankowania.Manage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemTankowania"
+        mc:Ignorable="d"
+        Title="Zarządzanie tankowaniami" Height="708" Width="828" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid>
+        <GroupBox Header="Dodaj nowe tankowanie" HorizontalAlignment="Left" Height="254" VerticalAlignment="Top" Width="735" Margin="10,0,0,0">
+        </GroupBox>
+        <TextBox x:Name="miastotb" HorizontalAlignment="Left" Height="23" Margin="485,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+
+        <Label Content="Miasto:" HorizontalAlignment="Left" Margin="417,36,0,0" VerticalAlignment="Top"/>
+
+        <Image HorizontalAlignment="Left" Height="155" Margin="549,99,0,0" VerticalAlignment="Top" Width="148" Source="logo.png"/>
+
+        <Label Content="Województwo:" HorizontalAlignment="Left" Margin="417,67,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="wojcb" HorizontalAlignment="Left" Margin="518,67,0,0" VerticalAlignment="Top" Width="189">
+            <ComboBoxItem Content="Dolnośląskie"/>
+            <ComboBoxItem Content="Kujawsko-Pomorskie"/>
+            <ComboBoxItem Content="Lubelskie"/>
+            <ComboBoxItem Content="Lubuskie"/>
+            <ComboBoxItem Content="Łódzkie"/>
+            <ComboBoxItem Content="Małopolskie"/>
+            <ComboBoxItem Content="Mazowieckie"/>
+            <ComboBoxItem Content="Opolskie"/>
+            <ComboBoxItem Content="Podkarpackie"/>
+            <ComboBoxItem Content="Podlaskie"/>
+            <ComboBoxItem Content="Pomorskie"/>
+            <ComboBoxItem Content="Śląskie"/>
+            <ComboBoxItem Content="Świętokrzyskie"/>
+            <ComboBoxItem Content="Warmińsko-Mazurskie"/>
+            <ComboBoxItem Content="Wielkopolskie"/>
+            <ComboBoxItem Content="Zachodniopomorskie"/>
+        </ComboBox>
+        <Button x:Name="dodaj_tank_btn" Content="+" HorizontalAlignment="Left" Height="65" Margin="572.8,163.243,0,0" VerticalAlignment="Top" Width="65" FontSize="50" FontWeight="Bold" BorderThickness="0" HorizontalContentAlignment="Center" Padding="0,-13,0,0" UseLayoutRounding="False" Click="dodaj_tank_btn_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Height="65" Margin="750,418.852,0,0" VerticalAlignment="Top" Width="65" FontSize="50" FontWeight="Bold" BorderThickness="0" HorizontalContentAlignment="Center" Padding="0,-13,0,0" UseLayoutRounding="False" Click="Button_Click"/>
+        <DataGrid x:Name="tanklist" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="735" Margin="10,259,0,0"/>
+        <Label Content="Przebieg:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,55,0,0"/>
+        <Label Content="Ilość:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,148,0,0"/>
+        <Label Content="Rodzaj paliwa:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,81,0,0"/>
+        <Label Content="Cena za litr:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,117,0,0"/>
+        <Label Content="Pojazd:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,28,0,0"/>
+        <Label Content="Koszt:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,179,0,0"/>
+        <TextBox x:Name="koszttb" HorizontalAlignment="Left" Height="18" Margin="79,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" TextAlignment="Center" GotFocus="ilosctb_Copy_GotFocus"/>
+        <Label Content="Komentarz:" HorizontalAlignment="Left" Margin="31,218,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cenatb" HorizontalAlignment="Left" Height="18" Margin="118,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" TextAlignment="Center"/>
+        <TextBox x:Name="przebiegtb" HorizontalAlignment="Left" Height="18" Margin="107,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" TextAlignment="Center"/>
+        <TextBox x:Name="ilosctb" HorizontalAlignment="Left" Height="18" Margin="79,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" TextAlignment="Center"/>
+        <TextBox x:Name="komtb" HorizontalAlignment="Left" Height="35" Margin="100,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <ComboBox x:Name="rodzajcb" HorizontalAlignment="Left" Height="20" Margin="132,81,0,0" VerticalAlignment="Top" Width="84">
+            <ComboBoxItem Content="PB95"/>
+            <ComboBoxItem Content="PB98"/>
+            <ComboBoxItem Content="ON"/>
+            <ComboBoxItem Content="LPG"/>
+            <ComboBoxItem Content="CNG"/>
+        </ComboBox>
+        <ComboBox x:Name="pojazdcb" DisplayMemberPath = "model" SelectedValuePath = "idSamochodu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Margin="79,28,0,0"/>
+
+    </Grid>
+</Window>
